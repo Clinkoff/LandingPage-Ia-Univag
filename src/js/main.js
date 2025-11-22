@@ -166,4 +166,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const lazyImages = document.querySelectorAll("img[data-src]");
     lazyImages.forEach((img) => imageObserver.observe(img));
   }
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+
+      btn.disabled = true;
+      btn.innerHTML = "<span>ENVIANDO...</span>";
+      btn.classList.add("opacity-75", "cursor-not-allowed");
+
+      setTimeout(() => {
+        alert(
+          "Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve."
+        );
+
+        contactForm.reset();
+
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        btn.classList.remove("opacity-75", "cursor-not-allowed");
+      }, 1500);
+    });
+  }
 });
