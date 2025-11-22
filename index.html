@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenovo - Smarter Technology for All</title>
+    <link rel="icon" type="image/png" href="./assets/img/logos/logoInov.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body
+    class="bg-white text-gray-900 antialiased selection:bg-lenovo-red selection:text-white"
+  >
+    <header
+      id="header"
+      class="fixed top-0 w-full z-50 transition-all duration-300 py-6 bg-gradient-to-b from-black/80 to-transparent"
+    >
+      <div
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-2 z-50">
+          <img
+            src="./assets/img/logos/Lenovo_logo_2015.svg.png"
+            alt="Lenovo"
+            class="h-8 md:h-10 w-auto object-contain brightness-0 invert"
+          />
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="#hero"
+            class="text-sm font-medium text-white hover:text-lenovo-red transition-colors uppercase tracking-wide"
+            >Início</a
+          >
+          <a
+            href="#products"
+            class="text-sm font-medium text-white hover:text-lenovo-red transition-colors uppercase tracking-wide"
+            >Produtos</a
+          >
+          <a
+            href="#innovation"
+            class="text-sm font-medium text-white hover:text-lenovo-red transition-colors uppercase tracking-wide"
+            >Inovação</a
+          >
+          <a
+            href="#footer"
+            class="px-5 py-2 border border-white text-white text-sm font-bold hover:bg-lenovo-red hover:border-lenovo-red transition-all rounded"
+            >Contato</a
+          >
+        </nav>
+
+        <button id="mobile-menu-btn" class="md:hidden text-white p-2 z-50">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-lenovo-black/95 backdrop-blur-xl flex flex-col items-center justify-center hidden transition-all duration-300"
+      >
+        <nav class="flex flex-col gap-8 text-center">
+          <a
+            href="#hero"
+            class="text-2xl text-white font-bold hover:text-lenovo-red"
+            >Início</a
+          >
+          <a
+            href="#products"
+            class="text-2xl text-white font-bold hover:text-lenovo-red"
+            >Produtos</a
+          >
+          <a
+            href="#innovation"
+            class="text-2xl text-white font-bold hover:text-lenovo-red"
+            >Inovação</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section
+      id="hero"
+      class="relative h-screen min-h-[600px] w-full overflow-hidden bg-lenovo-black"
+    >
+      <div id="hero-slider" class="absolute inset-0">
+        <div class="hero-slide active">
+          <img src="./assets/img/heros/um.png" alt="Hero 1" />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"
+          ></div>
+        </div>
+        <div class="hero-slide">
+          <img src="./assets/img/heros/notemao.webp" alt="Hero 2" />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"
+          ></div>
+        </div>
+        <div class="hero-slide">
+          <img src="./assets/img/heros/homem.png" alt="Hero 3" />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="absolute inset-0 z-20 flex items-center container mx-auto px-6 lg:px-12"
+      >
+        <div class="max-w-3xl text-white animate-fade-up">
+          <span
+            class="block text-lenovo-red font-bold tracking-widest uppercase mb-4 text-sm md:text-base"
+            >Lenovo Official Store</span
+          >
+          <h1
+            class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6 text-shadow-sm"
+          >
+            Tecnologia que <br /><span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-lenovo-red to-red-500"
+              >Transforma.</span
+            >
+          </h1>
+          <p
+            class="text-lg md:text-2xl text-gray-300 mb-10 font-light max-w-xl leading-relaxed"
+          >
+            Potência, design e inovação para quem não aceita limites. Descubra a
+            nova linha 2025.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#products"
+              class="px-8 py-4 bg-lenovo-red hover:bg-red-700 text-white font-bold rounded shadow-lg shadow-red-900/30 transition-all transform hover:-translate-y-1 text-center"
+            >
+              Ver Produtos
+            </a>
+            <a
+              href="#innovation"
+              class="px-8 py-4 border border-white hover:bg-white hover:text-black text-white font-bold rounded transition-all text-center"
+            >
+              Saiba Mais
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-10 left-0 right-0 z-30 flex justify-center gap-4"
+      >
+        <button
+          class="slider-indicator w-3 h-3 rounded-full bg-white hover:bg-lenovo-red transition-all active-dot"
+        ></button>
+        <button
+          class="slider-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-lenovo-red transition-all"
+        ></button>
+        <button
+          class="slider-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-lenovo-red transition-all"
+        ></button>
+      </div>
+    </section>
+
+    <section id="products" class="py-24 bg-gray-50">
+      <div class="container mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl md:text-5xl font-black text-lenovo-black mb-4">
+            Nossos <span class="text-lenovo-red">Destaques</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            A melhor engenharia do mercado em suas mãos.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-500"
+          >
+            <div
+              class="h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="./assets/img/products/thinkpad.jpg"
+                alt="ThinkPad"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 left-4 bg-black text-white text-xs font-bold px-3 py-1 rounded uppercase"
+              >
+                Business
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-lenovo-black mb-2 group-hover:text-lenovo-red transition-colors"
+              >
+                ThinkPad X1
+              </h3>
+              <p class="text-gray-500 text-sm mb-6 line-clamp-2">
+                O notebook executivo mais leve e potente da categoria.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-lenovo-red font-bold text-sm hover:tracking-wide transition-all"
+              >
+                COMPRAR AGORA
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-500"
+          >
+            <div
+              class="h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="./assets/img/products/IdeapadSlim3.jpg"
+                alt="Ideapad"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded uppercase"
+              >
+                Home
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-lenovo-black mb-2 group-hover:text-lenovo-red transition-colors"
+              >
+                IdeaPad Slim
+              </h3>
+              <p class="text-gray-500 text-sm mb-6 line-clamp-2">
+                Versatilidade e leveza para o seu dia a dia.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-lenovo-red font-bold text-sm hover:tracking-wide transition-all"
+              >
+                COMPRAR AGORA
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-500"
+          >
+            <div
+              class="h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="./assets/img/products/yogaslim.jpg"
+                alt="Yoga"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded uppercase"
+              >
+                Creative
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-lenovo-black mb-2 group-hover:text-lenovo-red transition-colors"
+              >
+                Yoga Slim
+              </h3>
+              <p class="text-gray-500 text-sm mb-6 line-clamp-2">
+                Liberte sua criatividade com telas OLED e touch.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-lenovo-red font-bold text-sm hover:tracking-wide transition-all"
+              >
+                COMPRAR AGORA
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-500"
+          >
+            <div
+              class="h-64 overflow-hidden relative bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="./assets/img/products/loq.jpg"
+                alt="LOQ"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute top-4 left-4 bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded uppercase"
+              >
+                Gaming
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-xl font-bold text-lenovo-black mb-2 group-hover:text-lenovo-red transition-colors"
+              >
+                Lenovo LOQ
+              </h3>
+              <p class="text-gray-500 text-sm mb-6 line-clamp-2">
+                A porta de entrada para o mundo gamer de alta performance.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center text-lenovo-red font-bold text-sm hover:tracking-wide transition-all"
+              >
+                COMPRAR AGORA
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="innovation"
+      class="relative py-32 bg-lenovo-black overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-40">
+        <img
+          src="./assets/img/heros/maoLenovo.jpg"
+          alt="Background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-lenovo-black via-lenovo-black/90 to-lenovo-red/20"
+      ></div>
+
+      <div
+        class="container relative mx-auto px-6 lg:px-12 z-10 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="w-full md:w-1/2">
+          <span
+            class="text-lenovo-red font-bold tracking-widest uppercase mb-2 block"
+            >Smarter Technology</span
+          >
+          <h2
+            class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight"
+          >
+            Inovação em <br />Cada <span class="text-lenovo-red">Detalhe.</span>
+          </h2>
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+            Há mais de 30 anos liderando a revolução tecnológica. Nossos
+            engenheiros trabalham incansavelmente para criar dispositivos que
+            não apenas funcionam, mas inspiram.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="border-l-4 border-lenovo-red pl-4">
+              <h4 class="text-3xl font-bold text-white">#1</h4>
+              <p class="text-gray-500 text-sm uppercase">Líder Mundial</p>
+            </div>
+            <div class="border-l-4 border-lenovo-red pl-4">
+              <h4 class="text-3xl font-bold text-white">180+</h4>
+              <p class="text-gray-500 text-sm uppercase">Mercados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="bg-black text-white border-t border-gray-900 pt-16 pb-8"
+    >
+      <div class="container mx-auto px-6 lg:px-12">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-12"
+        >
+          <img
+            src="./assets/img/logos/Lenovo_logo_2015.svg.png"
+            alt="Lenovo"
+            class="h-8 brightness-0 invert mb-6 md:mb-0"
+          />
+          <div class="flex gap-6">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >Instagram</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >Twitter</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm">
+          &copy; 2025 Lenovo. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
